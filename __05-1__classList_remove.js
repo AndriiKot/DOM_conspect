@@ -14,6 +14,6 @@ for (const item of menu) {
 
 
     el.classList.add("active");
-    activeBtn = btn;
+    activeBtn = el;
   });
 }

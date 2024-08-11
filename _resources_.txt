@@ -1,0 +1,4 @@
+﻿
+JavaScript DOM:
+шпаргалка
+https://my-js.org/docs/cheatsheet/js-dom
