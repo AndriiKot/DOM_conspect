@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing</title>
+  </head>
+  <body>
+    <script>
+      // GOOD PRAXE
+      const btn = document.createElement("button");
+      btn.textContent = "Click me";
+      document.body.append(btn);
+      const menu = ["class-1", "class-2", "class-3"];
+
+      btn.className = menu.join(" ");
+      btn.className += " class-4";
+
+      console.log(btn.className); // 'class-1 class-2 class-3'
+    </script>
+  </body>
+</html>

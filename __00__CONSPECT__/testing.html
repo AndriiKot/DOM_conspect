@@ -7,11 +7,15 @@
 </head>
 <body>
   <script>
-    const btn = document.createElement("button");
-    btn.textContent = "Button 1";
-    document.body.append(btn);
-    btn.className = "active btn-1 btn-2";
-    console.log(btn.classList)
+const menu = ["Menu", "Home", "About", "Contact"];
+const btn = document.createElement('button');
+
+btn.classList.add(...menu);
+
+console.log(btn.className);
+console.log(btn.classList.length);
+
+
   </script>
 </body>
 </html>
