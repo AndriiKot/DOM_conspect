@@ -7,16 +7,19 @@
   </head>
   <body>
     <script>
-      // GOOD PRAXE
-      const btn = document.createElement("button");
-      btn.textContent = "Click me";
-      document.body.append(btn);
-      const menu = ["class-1", "class-2", "class-3"];
+      const fragment = document.createDocumentFragment();
 
-      btn.className = menu.join(" ");
-      btn.className += " class-4";
+      const newDiv1 = document.createElement("div");
+      newDiv1.textContent = "Element 1";
 
-      console.log(btn.className); // 'class-1 class-2 class-3'
+      const newDiv2 = document.createElement("div");
+      newDiv2.textContent = "Element 2";
+
+      fragment.appendChild(newDiv1, newDiv2);
+      fragment.appendChild(newDiv2, newDiv1);
+      fragment.appendChild(newDiv2);
+
+      document.body.appendChild(fragment);
     </script>
   </body>
 </html>

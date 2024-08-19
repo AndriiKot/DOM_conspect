@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример DOMTokenList</title>
+</head>
+<body class="foo bar baz">
+    <script>
+        const bodyClasses = document.body.classList; // Получаем DOMTokenList
+        console.log(bodyClasses); // DOMTokenList(3) ["foo", "bar", "baz"]
+    </script>
+</body>
+</html>
+
+<!-- DOMTokenList(3) ['foo', 'bar', 'baz', value: 'foo bar baz'] -->
+
+<!-- DOMTokenList(3) ['foo', 'bar', 'baz', value: 'foo bar baz']
+0: "foo"
+1: "bar"
+2: "baz"
+length: 3
+value: "foo bar baz"
+[[Prototype]]: DOMTokenList
+add: ƒ add()
+contains: ƒ contains()
+entries: ƒ entries()
+length: 0
+name: "entries"
+arguments: (...)
+caller: (...)
+[[Prototype]]: ƒ ()
+[[Scopes]]: Scopes[0]
+forEach: ƒ forEach()
+item: ƒ item()
+keys: ƒ keys()
+length: (...)
+remove: ƒ remove()
+replace: ƒ replace()
+supports: ƒ supports()
+toString: ƒ toString()
+toggle: ƒ toggle()
+value: (...)
+values: ƒ values()
+constructor: ƒ DOMTokenList()
+Symbol(Symbol.iterator): ƒ values()
+Symbol(Symbol.toStringTag): "DOMTokenList"
+get length: ƒ length()
+get value: ƒ value()
+set value: ƒ value()
+[[Prototype]]: Object
+ -->
