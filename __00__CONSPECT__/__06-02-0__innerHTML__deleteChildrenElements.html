@@ -1,0 +1,20 @@
+﻿<form>
+  <label>Логин</label>
+  <input type="text" id="login" />
+  <div class="error">Введите логин</div>
+</form>
+
+<script>
+  const form = document.querySelector("form");
+  console.log(form.innerHTML); //  !!!! get  children content with tags and attributes   !!!!
+  // <label>Логин</label>
+  // <input type="text" id="login">
+  // <div class="error">Введите логин</div>
+
+  // !!! WARNING delete
+  form.innerHTML = ""; // !!! WARNING DELETE !!!
+  // !!! WARNING
+
+  // DELETE ALL CHILDREN !!!
+  console.log(form.innerHTML); // ''
+</script>

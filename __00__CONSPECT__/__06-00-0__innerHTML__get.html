@@ -1,0 +1,36 @@
+﻿<form>
+  <label>Логин</label>
+  <input type="text" id="login" />
+  <div class="error">Введите логин</div>
+</form>
+
+<script>
+  const form = document.querySelector("form");
+  console.log(form.innerHTML); //  !!!! get  children content with tags and attributes   !!!!
+  // <label>Логин</label>
+  // <input type="text" id="login">
+  // <div class="error">Введите логин</div>
+
+
+  
+  // !!!  textContent
+  console.log(form.textContent); //  !!!! get ONLY text content
+  // Логин
+  // Введите логин
+  // !!!
+
+  // !!! outerHTML
+  console.log(form.outerHTML); // !!! get full elemen with tags and attributes and text content
+  //   <form>
+  //   <label>Логин</label>
+  //   <input type="text" id="login">
+  //   <div class="error">Введите логин</div>
+  // </form>
+  // !!! outerHTML
+
+  // !!! innerText
+  console.log(form.innerText); // !!! get ONLY text content
+  // Логин
+  // Введите логин
+  // !!! innerText
+</script>

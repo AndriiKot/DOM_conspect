@@ -1,0 +1,21 @@
+﻿<form>
+  <label>Логин</label>
+  <input type="text" id="login" />
+  <div class="error">Введите логин</div>
+</form>
+
+<script>
+  const form = document.querySelector("form");
+  console.log(form.innerHTML); //  !!!! get  children content with tags and attributes   !!!!
+  // <label>Логин</label>
+  // <input type="text" id="login">
+  // <div class="error">Введите логин</div>
+
+ // !!! WARNING set
+  form.innerHTML = `<h1>HELLO!</h1>`; // !!! WARNING old content will be deleted !!!
+// !!! WARNING
+
+// NEW VALUE !!!
+console.log(form.innerHTML); // <h1>HELLO!</h1> 
+  
+</script>

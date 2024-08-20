@@ -1,0 +1,16 @@
+﻿<form>
+  <label>Логин</label>
+  <input type="text" id="login" />
+  <div class="error">Введите логин</div>
+</form>
+
+<script>
+  const form = document.querySelector("form");
+  console.log(form.outerHTML); //  !!!! get full element content with tags and attributes   !!!!
+
+  // !!! WARNING NEW VALUE SET !!!
+  form.outerHTML = `<h1>HELLO!</h1>`;
+  // !!! WARNING
+
+  console.log(form.outerHTML); // <h1>HELLO!</h1>  !!! old element and with old content will be deleted !!!
+</script>
